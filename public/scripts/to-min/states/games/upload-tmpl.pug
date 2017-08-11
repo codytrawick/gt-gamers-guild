@@ -1,0 +1,9 @@
+p Hi
+
+div(class="form-group")
+  form(class="form-group" id="fileForm" method="post" action="/uploadFile" enctype="multipart/form-data")
+    h3 Upload a File
+    label(for="inputFile") File to Upload
+    input(type="text" id="gameID" name="gameID" value="{{gameID.ID}}")
+    input(type="file" class="form-control-file" id="inputFile" name="inputFile" aria-describedby="fileHelp")
+    button(class="btn btn-priary" id="submitButton") Submit

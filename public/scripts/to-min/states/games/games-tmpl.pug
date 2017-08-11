@@ -1,0 +1,6 @@
+div(ui-view="form")
+div(class="container") Da Games
+  div(ng-repeat="game in games" class="gameTile")
+    div(ng-click="selectGame(game)")
+      p {{game.Name}}
+      img(src="{{game.Image}}" alt="{{game.Name}} image")
